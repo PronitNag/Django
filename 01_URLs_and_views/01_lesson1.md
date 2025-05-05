@@ -113,3 +113,22 @@ def category(request, category_name):
 ```
 
 
+# ✅ Test URLs You Can Use
+This is now ready to test normal, edge, and error cases
+Below are some sample URLs you can use to test your Django views:
+
+| URL                            | Purpose                                                       |
+|--------------------------------|---------------------------------------------------------------|
+| `/`                            | Test `home` view                                               |
+| `/about/`                      | Test `about` template view                                     |
+| `/item/1/`                     | Test `item_detail` view (make sure `Item` with `id=1` exists) |
+| `/item/9999/`                  | Test non-existent item (should return 404)                     |
+| `/category/electronics/`       | Test `category` view (ensure such a category exists)           |
+| `/category/furniture/`         | Test another valid category view                               |
+| `/category/unknown/`           | Test invalid category name (should return error message)       |
+| `/item/abc/`                   | Test invalid item_id (non-integer, should return 404)          |
+| `/category/`                   | Test missing category name (should return 404)                 |
+| `/item/`                       | Test missing item_id (should return 404)                       |
+
+
+
