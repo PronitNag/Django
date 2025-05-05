@@ -9,7 +9,7 @@ Django mein jab koi user request karta hai, toh URL pattern match hota hai, fir 
 
 Django mein URLs ko define karne ke liye **urls.py** file use hoti hai
 
-iss example me project ka naam hai myproject and app ka naam hai myapp
+iss example me project ka naam hai **myproject** and app ka naam hai **myapp**
 
 # Ye project level urls.py file hai
 
