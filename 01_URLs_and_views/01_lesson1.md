@@ -9,6 +9,8 @@ Django mein jab koi user request karta hai, toh URL pattern match hota hai, fir 
 
 Django mein URLs ko define karne ke liye **urls.py** file use hoti hai
 
+iss example me project ka naam hai myproject and app ka naam hai myapp
+
 # Ye project level urls.py file hai
 
 ```python
@@ -46,4 +48,20 @@ urlpatterns = [
     # Custom path: 'myapp/about-us/'
     path('about-us/', views.about, name='about'),
 ]
+```
+
+
+```text
+URLs ke baare mein important points:
+
+urlpatterns ek list hai jisme saare URL patterns define kiye jate hain
+path() function main arguments:
+
+URL pattern (jaise 'about-us/')
+View function (jise call karna hai)
+name (URL ko refer karne ke liye)
+
+
+<int:item_id> jaise parameters URL se data capture karte hain
+include() function se app-specific URLs ko include kiya jata hai
 ```
