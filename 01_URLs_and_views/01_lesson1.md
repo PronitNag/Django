@@ -51,17 +51,19 @@ urlpatterns = [
 ```
 
 
-```text
-URLs ke baare mein important points:
 
-urlpatterns ek list hai jisme saare URL patterns define kiye jate hain
-path() function main arguments:
+# URLs ke baare mein important points:
+
+```text
+1) urlpatterns ek list hai jisme saare URL patterns define kiye jate hain
+
+2) path() function main arguments:
 
 URL pattern (jaise 'about-us/')
 View function (jise call karna hai)
 name (URL ko refer karne ke liye)
 
+3) <int:item_id> jaise parameters URL se data capture karte hain
 
-<int:item_id> jaise parameters URL se data capture karte hain
-include() function se app-specific URLs ko include kiya jata hai
+4) include() function se app-specific URLs ko include kiya jata hai
 ```
